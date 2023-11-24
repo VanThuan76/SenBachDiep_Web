@@ -12,6 +12,7 @@ const httpsPort = 443; // Port for HTTPS
 
 app.prepare().then(() => {
   const server = express();
+l
 
   // Define the paths you want to handle with Next.js
   server.all('*', (req, res) => {
@@ -20,8 +21,8 @@ app.prepare().then(() => {
 
   // Read the SSL certificate and key files
   const httpsOptions = {
-    key: fs.readFileSync('/etc/letsencrypt/live/vjgr.com.vn/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/vjgr.com.vn/fullchain.pem'),
+    key: fs.readFileSync('/etc/letsencrypt/live/senbachdiep.com/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/senbachdiep.com/fullchain.pem'),
   };
 
   https.createServer(httpsOptions, server).listen(httpsPort, () => {
