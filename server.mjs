@@ -12,7 +12,6 @@ const httpsPort = 443; // Port for HTTPS
 
 app.prepare().then(() => {
   const server = express();
-l
 
   // Define the paths you want to handle with Next.js
   server.all('*', (req, res) => {
