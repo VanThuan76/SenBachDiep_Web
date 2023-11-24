@@ -6,7 +6,7 @@ import useTrans from '@/src/shared/hooks/useTrans';
 import IconLogoLight from '@/src/shared/components/icons/IconLogoLight';
 import ListMenu from './ListMenu';
 import { menuPath } from '@/src/shared/constants/dump/common';
-import SwitchLanguageMode from '@/src/shared/components/customization/SwitchLanguageMode';
+import SwitchLanguageMode from '@/src/shared/components/customization/switchLanguageMode';
 
 const HambergerMenu = () => {
   const router = useRouter();

@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
-
 import { menuPath } from '@/src/shared/constants/dump/common';
 import IconLogoLight from '@/src/shared/components/icons/IconLogoLight';
 import ListMenu from '@/src/shared/components/business/layout/header/ListMenu';
 import HambergerMenu from '@/src/shared/components/business/layout/header/HambergerMenu';
-import SwitchLanguageMode from '@/src/shared/components/customization/SwitchLanguageMode';
+import SwitchLanguageMode from '@/src/shared/components/customization/switchLanguageMode';
 
 const HeaderLayoutWebsite = () => {
   const router = useRouter();
