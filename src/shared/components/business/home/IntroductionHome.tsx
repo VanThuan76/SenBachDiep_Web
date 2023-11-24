@@ -11,9 +11,11 @@ const IntroductionHome = ({ data }: Props) => {
         <div className='mx-auto w-full h-[500px] relative overflow-hidden rounded-lg'>
           <PreImage
             src={data.image as string}
+            height={500}
             layer={false}
             alt='Banner'
             objectPosition='center'
+            className='object-cover'
           />
         </div>
         <div className='w-full flex flex-col justify-center items-center gap-5'>

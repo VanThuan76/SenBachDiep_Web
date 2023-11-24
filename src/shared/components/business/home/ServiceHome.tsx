@@ -20,9 +20,11 @@ const ServiceHome = () => {
               <div className='mx-auto w-full h-[300px] relative overflow-hidden rounded-lg'>
                 <PreImage
                   src={item.image_url as string}
+                  height={300}
                   layer={false}
                   alt={item.title as string}
                   objectPosition='center'
+                  className='object-cover'
                 />
               </div>
               <div className='w-full flex flex-col gap-3 justify-start items-start'>
