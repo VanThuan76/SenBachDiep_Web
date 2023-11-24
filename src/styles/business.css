@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-    --main-color: #1B3864
+    --main-color: #D9A536
 }
 .padding-section{
     @apply px-4 md:px-24 lg:px-32 xl:px-16

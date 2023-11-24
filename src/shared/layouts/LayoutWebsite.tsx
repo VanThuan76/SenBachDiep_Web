@@ -1,22 +1,17 @@
 import React from 'react';
+import { setCookie } from 'cookies-next';
 import FooterLayoutWebsite from './FooterLayoutWebsite';
 import HeaderLayoutWebsite from './HeaderLayoutWebsite';
-import { useAppSelector } from '@/src/shared/hooks/useRedux';
-import { useGetUserByEmail, useGetUserById, useGetUserByRegisterMember } from 'src/queries/user.queries';
+import { APP_SAVE_KEY } from '../constants';
 interface Props {
   children: React.ReactNode;
 }
 const LayoutWebsite = ({ children }: Props) => {
-  const { user } = useAppSelector(state => state.appSlice);
-  const isLogin = user?.user !== undefined;
-  const isMember = user?.member !== null;
-  useGetUserByRegisterMember()
-  useGetUserByEmail()
-  useGetUserById()
+  setCookie(APP_SAVE_KEY.TOKEN_KEY, process.env.TOKEN_KEY)
   return (
     <React.Fragment>
-      <HeaderLayoutWebsite isLogin={isLogin ? true : false} isMember={isMember} />
-      <main className='w-full min-h-screen dark:bg-[#141523] pb-4 md:pb-8 lg:pb-16 px-4 md:px-24'>
+      <HeaderLayoutWebsite />
+      <main className='mx-auto flex min-h-screen max-w-[1980px] flex-col justify-center items-center overflow-x-hidden dark:bg-[#141523]'>
         {children}
       </main>
       <FooterLayoutWebsite />

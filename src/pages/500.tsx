@@ -23,7 +23,7 @@ const Error500 = () => {
 
           <button className=' bg-black dark:bg-btndark hover:bg-blackho ease-in-out duration-300 font-medium text-white rounded-full px-6 py-3 mt-4'>
             <Link href={'/'} className='inline-flex gap-2.5 items-center'>
-              {trans.auth.breadcrumbLogin}
+              {trans.common.home}
               <svg
                 className='fill-white'
                 width='14'

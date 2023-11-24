@@ -1,35 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect } from 'react';
 import useTrans from '@/src/shared/hooks/useTrans';
 
 const Img404 = '/404.svg';
 
 export default function Page404() {
   const { trans } = useTrans();
-  useEffect(() => {
-    const ScrollReview = import('scrollreveal').then(module => {
-      console.log(module);
-      const sr = module.default({
-        distance: '60px',
-        duration: 2800,
-        reset: false,
-      });
-      sr.reveal(`.animate_top`, {
-        origin: 'top',
-        interval: 100,
-      });
-      sr.reveal(`.animate_left`, {
-        origin: 'left',
-        interval: 100,
-      });
-      sr.reveal(`.animate_right`, {
-        origin: 'right',
-        interval: 100,
-      });
-    });
-  }, []);
-
   return (
     <section className='pt-48 lg:pt-50 xl:pt-55 pb-25 lg:pb-32.5 xl:pb-37.5 overflow-hidden'>
       <div className='animate_top mx-auto max-w-[518px] text-center'>
@@ -40,7 +16,7 @@ export default function Page404() {
 
         <button className=' bg-black dark:bg-btndark hover:bg-blackho ease-in-out duration-300 font-medium text-white rounded-full px-6 py-3 mt-4'>
           <Link href={'/'} className='inline-flex gap-2.5 items-center'>
-            {trans.auth.breadcrumbLogin}
+            {trans.common.home}
             <svg
               className='fill-white'
               width='14'

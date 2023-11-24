@@ -1,53 +1,20 @@
 const VnScript = {
     common: {
-        logout: "Đăng xuất",
-        login: "Đăng nhập",
-        register: "Đăng ký",
-        registerMember: "Đăng ký thành viên",
-        updateMember: "Cập nhật thành viên",
-        search: "Tìm kiếm",
-        member: "Thành viên",
-        account: "Tài khoản",
-        codeVJGR: "Mã VJGR",
-        nationality: "Quốc tịch",
-        table: "Bảng",
-        all: "Tất cả",
-        rating: "Xếp hạng",
-        male: "Nam",
-        female: "Nữ",
-        total: "Tổng",
-        age: "Độ tuổi",
-        upDow: "Tăng/giảm",
-        rewardPoint: "Điểm thưởng",
-        join: "Tham gia",
-        gender: "Giới tính",
-        seeMore: "Xem thêm",
-        collapse: "Thu gọn",
-        fillIn: "Nhập",
-        tournament: "Giải đấu",
-        bout: "lần",
-        time: "Thời gian",
-        score: "Điểm số",
-        area: "Khu vực",
-        provinceCity: "Tỉnh/TP",
-        tournamentType: "Loại giải đấu",
-        formula: "Thể thức",
-        status: "Trạng thái",
-        fromDate: "Từ ngày",
-        startDay: "Ngày bắt đầu",
-        endDay: "Ngày kết thúc",
-        toDate: "Đến ngày",
-        organizer: 'Nhà tổ chức',
-        complete: "Hoàn thành",
-        return: "Quay lại",
-        send: "Gửi",
-        update: "Cập nhật",
-        notFound: "Không tìm thấy",
-        titleUpdateSoon: "Tính năng đang phát triển",
+        home: "Sen Bách Diệp",
+        service: "Danh mục dịch vụ nổi bật",
+        about_us: "Về chúng tôi",
+        menu: {
+            home: "Trang chủ",
+            introduction: "Giới thiệu",
+            services: "Dịch vụ",
+            price_list: "Bảng giá",
+            promotion: "Khuyến mại",
+            news: "Tin tức",
+            contact: "Liên hệ"
+        },
         vietnamese: "Tiếng Việt",
         english: "Tiếng Anh",
-        skip: "Bỏ qua",
-        edit: "Chỉnh sửa"
+        notFound: "Không tìm thấy",
     },
     error:{
         title404: "Trang này không tồn tại",
@@ -55,87 +22,11 @@ const VnScript = {
         title500: "Xảy ra lỗi",
         description500: "Máy chủ xảy ra lỗi, vui lòng thử lại hoặc liên hệ admin"
     },
-    menu: {
-        rank: "Bảng xếp hạng",
-        tournament: "Giải đấu",
-        news: "Tin tức",
-    },
-    auth: {
-        breadcrumbLogin: "Quay lại trang chủ",
-        breadcrumbForgotPassword: "Quay lại đăng nhập",
-        password: "Mật khẩu",
-        passwordConfirm: "Xác nhận mật khẩu",
-        titleForgotPassword: "Quên mật khẩu",
-        forgotPassword: "Quên mật khẩu?",
-        descriptionLogin: "Bạn chưa có tài khoản thành viên?",
-        hintLogin: "Hoặc đăng nhập với",
-        titleRegister: "Đăng ký tài khoản",
-        descriptionRegister: "Bạn đã có tài khoản thành viên?",
-        firstLastName: "Họ và tên",
-        currentPassword: "Mật khẩu hiện tại",
-        newPassword: 'Mật khẩu mới'
-    },
-    rank:{
-        title: "Trang chủ Golf Ranking",
-        titleDetail: "Bảng xếp hạng chi tiết Golf Achievement",
-        nationalRanking: "Bảng xếp hạng quốc gia",
-        tableSummary: "Bảng tổng hợp",
-        highestRating: "Xếp hạng cao nhất",
-        currentRating: "Xếp hạng hiện tại",
-        champion: "Vô địch",
-        breadcrumb: "Quay lại Bảng xếp hạng"
-    },
-    tournament: {
-        title: "Giải đấu Golf Ranking",
-        titleGroup: "Bảng nhóm giải đấu Golf Association",
-        titleDetail: "Bảng giải đấu chi tiết Golf Association",
-        VGAJuniorSolutionSystem: "Hệ thống giải VGA Junior",
-        VietnamJuniorOpenVJO: "Việt Nam mở rộng (VJO)",
-        VietnamAmateurOpenVAO: "Việt Nam nghiệp dư mở rộng (VAO)",
-        VGATourSolutionSystem: "Hệ thống giải VGA Tour",
-        LocalTournaments: "Các giải địa phương",
-        SoutheastAsiaRegionalTournaments: "Các giải khu vực Đông Nam Á",
-        AsianRegionalTournaments: "Các giải khu vực Châu Á",
-        DifferentTournamentsSystem: "Hệ thống giải khác",
-        watchTournaments: "Xem các giải đấu",
-        breadcrumb: "Quay lại Danh sách hệ thống giải đấu",
-        numberOfRound: "Số vòng đấu",
-        round: "Vòng",
-        championAthlete: "Vận động viên vô địch"
-    },
-    news:{
-        title: "Tin tức",
-        breadcrumb: "Quay lại Danh sách tin tức",
-        titleLastNews: "BÀI VIẾT MỚI"
-    },
-    user:{
-        title: "Thông tin người dùng Golf Achievement",
-        userInfo: "Thông tin tài khoản",
-        memberInfor: "Thông tin thành viên",
-        guardianInfor: "Thông tin bảo trợ",
-        fullName: "Họ tên"
-    },
     table: {
         nothing: "Không",
         quantityPerPage: "Số lượng mỗi trang",
         page: "trang",
         of: "của"
-    },
-    formRegisterMember:{
-        description: "Đăng ký thành viên để tham gia giải đấu và bảng xếp hạng",
-    },
-    formUpdateMember:{
-        description: "Cập nhật thành viên để ban tổ chức phê duyệt",
-    },
-    footer: {
-       aboutUs: "Về chúng tôi",
-       historyBegin: "Lịch sử hình thành",
-       visionMission: "Tầm nhìn & Sứ mệnh",
-       termsConditions: "Điều kiện & điều khoản",
-       contact: 'Liên hệ',
-       address: "Địa chỉ: Số 36 Trần Phú, Quận Ba Đình, TP. Hà Nội",
-       phoneNumber: "Số điện thoại: +84 946786564",
-       copyright: "Bản quyền nội dung thuộc về Công ty Metaverse Vietnam"
     }
-}
-export default VnScript
+};
+export default VnScript;

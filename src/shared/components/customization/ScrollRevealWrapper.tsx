@@ -4,7 +4,7 @@ import scrollReveal from 'scrollreveal';
 interface Props {
   style?: CSSProperties;
   children: React.ReactNode;
-  revealConfig?: object; 
+  revealConfig?: object;
 }
 
 const ScrollRevealWrapper: FC<Props> = ({ children, style, revealConfig }) => {
@@ -20,7 +20,12 @@ const ScrollRevealWrapper: FC<Props> = ({ children, style, revealConfig }) => {
   }, [revealConfig]);
 
   return (
-    <section ref={sectionRef} style={style} data-testid='section'>
+    <section
+      ref={sectionRef}
+      style={style}
+      data-testid='section'
+      className='relative mx-auto flex w-full flex-col items-center justify-center overflow-hidden'
+    >
       {children}
     </section>
   );

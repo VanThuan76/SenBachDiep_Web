@@ -4,7 +4,6 @@ import { APP_SAVE_KEY } from 'src/shared/constants';
 
 class Axios {
   private api: AxiosInstance;
-
   constructor(baseURL: string, noAuth: boolean) {
     this.api = axios.create({
       baseURL,
@@ -33,7 +32,6 @@ class Axios {
   handleResponse(axios: AxiosInstance) {
     axios.interceptors.response.use(
       async (response: AxiosResponse) => {
-        const originalRequest = response.config
         if (typeof window !== 'undefined') {
           const statusCode = response.data.statusCode
           switch (statusCode) {
@@ -55,14 +53,13 @@ class Axios {
         return response;
       },
       async (error) => {
-        const originalRequest = error.config;
         if (error.response.status === 403 && typeof window !== 'undefined') {
-          window.location.href = '/login'
+          // window.location.href = '/login'
           deleteCookie(APP_SAVE_KEY.TOKEN_KEY)
         }
         if (error.response.status === 401 && typeof window !== 'undefined') {
           try {
-            window.location.href = '/login'
+            // window.location.href = '/login'
           } catch (e) {
           }
         }
