@@ -5,10 +5,12 @@ import { Badge } from '@/src/shared/components/ui/badge';
 import IconUser from '@/src/shared/components/icons/business/IconUser';
 import IconStar from '@/src/shared/components/icons/business/IconStar';
 import IconComment from '@/src/shared/components/icons/business/IconComment';
-
-const ServiceHome = () => {
+import { IServices } from '@/src/schemas/services';
+type Props = {
+  data: IServices | undefined
+}
+const ServiceHome = ({data}: Props) => {
   const { trans } = useTrans();
-  const { data } = useGetListService();
   if (!data) return <></>;
   return (
     <section id='ServiceHome' className='w-screen px-4 pb-4 md:px-24 md:pb-8 lg:pb-10 xl:pb-24'>
@@ -23,7 +25,6 @@ const ServiceHome = () => {
                   height={300}
                   layer={false}
                   alt={item.title as string}
-                  objectPosition='center'
                   className='object-cover'
                 />
               </div>

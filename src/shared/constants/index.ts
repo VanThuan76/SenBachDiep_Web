@@ -20,6 +20,3 @@ export const URL_SYSTEMS = {
     NEWS: "/news",
     TO_BE_UPDATE: "/update-soon"
 }
-export const SOCIAL_BUSINESS = {
-    FACEBOOK: 'https://www.facebook.com/vietnamgolfassociation/?locale=vi_VN'
-}
