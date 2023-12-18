@@ -17,6 +17,7 @@ const VnScript = {
         vietnamese: "Tiếng Việt",
         english: "Tiếng Anh",
         notFound: "Không tìm thấy",
+        phone_number: "Số điện thoại",
         business_info: {
             information_title: "Thông tin",
             vision_title: "Tầm nhìn",

@@ -17,6 +17,7 @@ const EnglishScript = {
         vietnamese: "Vietnamese",
         english: "English",
         notFound: "Not Found",
+        phone_number: "Phone number",
         business_info: {
             information_title: "Information",
             vision_title: "Vision",
