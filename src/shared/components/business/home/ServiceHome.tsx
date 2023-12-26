@@ -28,7 +28,7 @@ const ServiceHome = ({data}: Props) => {
                   className='object-cover'
                 />
               </div>
-              <div className='w-full flex flex-col gap-3 justify-start items-start'>
+              <div className='w-full h-[300px] flex flex-col gap-3 justify-start items-start'>
                 <h2 className='font-bold text-2xl'>{item.title}</h2>
                 <div className='flex justify-start items-center gap-2'>
                   {item.tags.map((tag, tagId) => (
@@ -37,7 +37,7 @@ const ServiceHome = ({data}: Props) => {
                     </Badge>
                   ))}
                 </div>
-                <p>{item.introduction}</p>
+                <p>{(item.introduction).substring(0, 50) + "..."}</p>
                 <div className='flex justify-start items-center gap-3'>
                   <div className='flex justify-start items-center gap-2 border-r border-r-[#C9C9C9] pr-3'>
                     <IconUser />
